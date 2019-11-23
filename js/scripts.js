@@ -65,6 +65,8 @@ $(function() {
     $('[data-fancybox]:not(.slick-cloned)').fancybox({
         afterClose : function(){
             reloadSlider();
+            $('body').removeClass('fancybox-active');
+            $('body').removeClass('compensate-for-scrollbar');
             return true;
         }
     });
