@@ -64,7 +64,6 @@ $(function() {
     // fancybox 
     $('[data-fancybox]:not(.slick-cloned)').fancybox({
         afterClose : function(e){
-            e.preventDefault();
             reloadSlider();
             const body = $('body');
             $(body).removeClass('fancybox-active');
