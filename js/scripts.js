@@ -63,11 +63,11 @@ $(function() {
 
     // fancybox 
     $('[data-fancybox]:not(.slick-cloned)').fancybox({
+        overlay: {
+            locked: false
+        },
         afterClose : function(e){
             reloadSlider();
-            const body = $('body');
-            $(body).removeClass('fancybox-active');
-            $(body).removeClass('compensate-for-scrollbar');
             return true;
         }
     });
