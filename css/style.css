@@ -2524,18 +2524,18 @@ template {
   display: flex;
   box-sizing: border-box;
   background-color: #fff;
-  padding: 50px;
+  padding: 55px;
   margin: 0 auto;
 }
 .feedback-item img {
   transform: scale(1);
   transition: all .3s;
   outline: none;
-  filter: blur(2px);
+  /* filter: blur(2px); */
 }
 .slick-center .feedback-item img {
   transform: scale(1.2);
-  filter: blur(0);
+  /* filter: blur(0); */
 }
 @media (max-width: 1200px) {
   .feedback-item {

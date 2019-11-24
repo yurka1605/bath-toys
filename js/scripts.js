@@ -63,12 +63,16 @@ $(function() {
 
     // fancybox 
     $('[data-fancybox]:not(.slick-cloned)').fancybox({
-        overlay: {
-            locked: false
+        helpers:  {
+            overlay : {
+                showEarly : false
+            }
         },
-        afterClose : function(e){
+        beforeClose: function() {
+            $('body').removeClass('compensate-for-scrollbar');
+        },
+        afterClose : function() {
             reloadSlider();
-            return true;
         }
     });
 
