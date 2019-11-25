@@ -2388,7 +2388,11 @@ template {
   }
   .feedback__description a {
     color: #1A9AC5;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
     line-height: 2;
+    width: fit-content;
   }
   .feedback__slider {
     position: relative;
@@ -2532,6 +2536,23 @@ template {
   transition: all .3s;
   outline: none;
   /* filter: blur(2px); */
+}
+.instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 25px;
+  line-height: 30px;
+  vertical-align: middle;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+  margin-right: 10px;
 }
 .slick-center .feedback-item img {
   transform: scale(1.2);
